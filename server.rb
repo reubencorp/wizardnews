@@ -7,7 +7,6 @@ require_relative "lib/wizard_article"
 get '/' do
   @articles = []
   CSV.foreach('articles.csv', headers: true) do |row|
-
     @articles << WizardArticle.new(row['title'], row['description'])
   end
 
