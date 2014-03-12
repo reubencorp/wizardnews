@@ -1,0 +1,31 @@
+<!-- show a list of all articles w links -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wizard News</title>
+    <link rel="stylesheet" href="home.css" /> <!-- need public? a: no -->
+  </head>
+
+  <body>
+    <h1>Submit New Article</h1>
+    <form action="/post_article" method="post">
+      <div>
+        <label for="post_title">Article Title:</label>
+        <input type="text" id="post_title" name="post_title" />
+      </div>
+      <div>
+        <label for="post_desc">Article Description:</label>
+        <input type="text" id="post_description" name="post_description" />
+      </div>
+      <div>
+        <label for="post_contents">Article Contents:</label>
+        <textarea id="post_contents" name="post_contents"> </textarea>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+
+  </body>
+</html>
