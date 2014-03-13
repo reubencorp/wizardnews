@@ -20,6 +20,10 @@ get '/new_article' do
   erb :new_article
 end
 
+get '/:' do
+
+  erb :article
+end
 
 post '/post_article' do
   @post_title       = params['post_title']

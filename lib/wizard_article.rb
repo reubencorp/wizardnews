@@ -1,6 +1,7 @@
 class WizardArticle
 
   attr_reader :title, :description, :contents
+
   def initialize(title, description, contents='nil')
     @title       = title
     @description = description
@@ -13,6 +14,5 @@ class WizardArticle
       row << [@title, @description, @contents]
     end
   end
-
 
 end
